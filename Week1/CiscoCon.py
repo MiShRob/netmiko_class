@@ -9,7 +9,7 @@ devices = [{
     {
     "ip": "cisco3.lasthop.io",
     "username": "pyclass",
-    "password": "88newclass",
+    "password": getpass(),
     "device_type": "cisco_nxos" }]
 
 for dev in devices:
