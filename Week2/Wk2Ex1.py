@@ -9,14 +9,14 @@ device1 = {
 }
 
 net_connect = ConnectHandler(**device1)
-print(new_connect.find_prompt())
+print(net_connect.find_prompt())
 output = net_connect.send_command_timing('ping')
 if 'Protocol' in output:
 	output += net_connect.send_command_timing('ip')
 if 'Target IP' in output:
 	output += net_connect.send_command_timing('8.8.8.8')
 if 'Repeat count' in output:
-	output +- net_connect.send_command_timing('5')
+	output += net_connect.send_command_timing('5')
 if 'Datagram size' in output:
 	output += net_connect.send_command_timing('100')
 if 'Timeout in seconds' in output:
