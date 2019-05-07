@@ -8,9 +8,9 @@ device1 = {
     "device_type": "cisco_ios",
 }
 
-new_connect = ConnectHandler(**device1)
+net_connect = ConnectHandler(**device1)
 print(new_connect.find_prompt())
-output = new_connect.send_command_timing('ping')
+output = net_connect.send_command_timing('ping')
 if 'Protocol' in output:
 	output += net_connect.send_command_timing('ip')
 if 'Target IP' in output:
