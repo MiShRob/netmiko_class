@@ -1,0 +1,8 @@
+delay_factor - increase the delay for the particular command to complete
+global_delay_factor - increase the delays across all commands in the program
+sleep(x) - stop/sleep the program execution in secs until the set time is expired
+
+netmiko - write_channel ... write to the already open channel.
+
+sshdispatcher -- All the available ssh connectors. 
+
