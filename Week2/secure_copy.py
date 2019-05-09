@@ -1,3 +1,4 @@
+
 from netmiko import ConnectHandler, file_transfer
 
 device1 = {
@@ -31,4 +32,5 @@ transfer_dict = file_transfer(
 	direction=direction,
 	overwrite_file=True,
 	)
+
 print(transfer_dict)
